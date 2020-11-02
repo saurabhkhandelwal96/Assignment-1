@@ -1,0 +1,223 @@
+body{
+    background-color: #f8f9fa;
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;            
+}
+
+.name a{
+    color: black;
+    float: left;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 20px 200px 10px 20px;
+    text-decoration: none;
+}
+ul{
+    background-color: white;
+    box-shadow: 0 0 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    width: 100%;
+}
+li a{
+    color: black;
+    float: left;
+    margin: 20px 0 15px 38px;
+    text-decoration: none;
+}
+
+.landing{
+    display: grid;
+    grid-auto-columns: 40%;
+    margin: 40px 40px 20px 150px;    
+}
+
+.infoGrid{
+    grid-area: 1/1/2/2;
+    margin-top: 30px;
+}
+
+.imageGrid{
+    grid-area: 1/2/3/3;
+}
+
+img{
+    height: 500px;
+    width: auto;
+    margin-left: 80px;
+}
+
+.rectshape{
+    background-color: #fbbb4e;
+    float: left;
+    height: 8px;
+    margin-top: 8px;
+    width: 40px;
+}
+
+.lineshape{
+    background-color: #fbbb4e;
+    float: left;
+    height: 1px;
+    margin-top: 12px;
+    width: 80px;
+}
+
+span{
+    color: #fbbb4e;
+    font-weight: bold;
+    font-size: x-small;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+h1{
+    font-family: sans;
+    font-size: 60px;
+    margin-block-start: 0.37em;
+    margin-block-end: 0.17em;
+    text-transform: capitalize;
+    line-height: 60px;
+}
+
+.btnOne{
+    background-color: #007ef6;
+    border-radius: 30px;
+    color: white;
+    font-size: 10px;
+    margin-right: 80px;
+    letter-spacing: 2px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.btnTwo{
+    background-color: #293848;
+    border-radius: 30px;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 20px;
+    text-decoration: none;
+}
+.info-grid > p{
+    font-weight: lighter;
+}
+
+p{
+    font-weight: 100;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+label{
+    margin: 5px 25px 5px 0;
+    font-size: 26px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle{
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    li a {
+        margin: 15px 0 14px 35px;
+    }
+    .name a{
+        margin:10px 230px 10px 20px;
+    }
+  }
+
+@media only screen and (max-width: 1024px) {
+    li a {
+        margin: 16px 0 14px 12px;
+    }
+    .name a{
+        margin:10px 100px 10px 20px;
+    }
+    .btnOne{
+        margin-right: 10px;
+    }
+    .landing{
+        margin-left: 60px;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    li a {
+        display: block;
+        text-decoration: none;
+        margin: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    #toggle:checked ~ .menu {
+        display: block;
+    }
+    .landing{
+        display: grid;
+        grid-auto-columns: auto;
+        margin: 40px 40px 20px 60px;
+    }
+    .infoGrid{
+        grid-area: 2/1/3/2;
+    }
+    
+    .imageGrid{
+        grid-area: 1/1/2/2; 
+    }
+    li{
+        width: 100%;
+    }
+    .name a{
+        margin: 10px 100px 10px 20px;
+    }
+    ul{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .btnOne{
+        display: block;
+        margin: auto auto 10px auto;
+        width: 50%;
+        text-align: center;
+    }
+    .btnTwo{
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 50%;
+    }
+    img{
+        height: auto;
+        margin: auto;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 320px){
+    .landing{
+        margin-left: 30px;
+    }
+}
